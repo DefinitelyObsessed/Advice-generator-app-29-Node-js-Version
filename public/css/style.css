@@ -1,0 +1,199 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
+
+/* Roots */
+:root {
+      --clr-font: hsl(193, 38%, 86%);
+      --clr-button: hsl(150, 100%, 66%);
+      --clr-card-shadow: hsl(217, 19%, 38%);
+      --clr-card: hsl(217, 19%, 24%);
+      --clr-body: hsl(218, 23%, 16%);
+      --fw-400: 400;
+      --fw-600: 600;
+      --ff-body: 'Manrope', sans-serif;
+      --fs-h1: 0.7rem;
+      --fs-blockquote: 1.6rem;
+}
+
+/* Similar Parts */
+*, body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+
+body {
+      align-items: center;
+      background-color: var(--clr-body);
+      display: flex;
+      font-family: var(--ff-body);
+      justify-content: center;
+      min-height: 100vh;
+}
+
+body, .semi-main {
+      align-items: center;
+      display: flex;
+}
+
+/* Whole Card */
+main {
+      background-color: var(--clr-card);
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin: 50px 0;
+      width: 90vw;
+}
+
+.semi-main {
+      flex-direction: column;
+      gap: 2rem;
+      margin: 2rem auto 0 auto;
+      text-align: center;
+      width: 80vw;
+}
+
+h1 {
+      color: var(--clr-button);
+      font-size: var(--fs-h1);
+      font-weight: var(--fw-400);
+      letter-spacing: 5px;
+}
+
+blockquote {
+      color: var(--clr-font);
+      font-size: var(--fs-blockquote);
+      font-weight: var(--fw-600);
+      line-height: 1.5;
+      word-spacing: 8px;
+}
+
+.divider, picture, picture img {
+      width: 100%;
+}
+
+button {
+      background-color: var(--clr-button);
+      border-style: none;
+      border-radius: 50%;
+      display: flex;
+      margin: 0 auto;
+      padding: 1.2rem;
+      transform: translateY(2rem);
+}
+
+button img {
+      width: 1.5rem;
+}
+
+/* Animation Section */
+main {
+      animation: main-anime linear 600ms;
+}
+
+@keyframes main-anime {
+      0% {
+            opacity: 0;
+            transform: translateY(-100vh);
+      }
+
+      90% {
+            opacity: 0.5;
+      }
+
+      100% {
+            opacity: 1;
+            transform: translateY(0);
+      }
+}
+
+button {
+      cursor: pointer;
+      transition-property: box-shadow;
+      transition: 300ms ease;
+}
+
+button:hover {
+      box-shadow: var(--clr-button) 0 0 50px;
+}
+
+button picture, button img {
+      animation: rotate-button ease-in-out 400ms;
+      animation-delay: 900ms;
+}
+
+@keyframes rotate-button {
+      0% {
+            transform: rotate(0) scale(0.5);
+      }
+
+      25% {
+            transform: rotate(90deg) scale(0.6);
+      }
+
+      50% {
+            transform: rotate(180deg) scale(0.7);
+      }
+
+      75% {
+            transform: rotate(270deg) scale(0.8);
+      }
+
+      100% {
+            transform: rotate(360deg) scale(1);
+      }
+}
+
+/* Responsiveness Section */
+@media (min-width: 600px) {
+      main {
+            width: max(500px, 40vw);
+      }
+
+      .semi-main {
+            margin: 3rem auto 0 auto;
+            width: max(400px, 30vw);
+      }
+}
+
+@media (min-width: 1400px) {
+      .semi-main {
+            gap: 3rem;
+            margin: 4rem auto 0 auto;
+      }
+
+      button {
+            padding: 1.6rem;
+            transform: translateY(2.5rem);
+      }
+
+      button img {
+            width: 2rem;
+      }
+
+      :root {
+            --fs-h1: 1rem;
+            --fs-blockquote: 2rem;
+      }
+}
+
+@media (min-width: 2000px) {
+      .semi-main {
+            gap: 4rem;
+            margin: 5rem auto 0 auto;
+      }
+
+      button {
+            padding: 2.6rem;
+            transform: translateY(3.5rem);
+      }
+
+      button img {
+            width: 3.5rem;
+      }
+
+      :root {
+            --fs-h1: 1.5rem;
+            --fs-blockquote: 2.8rem;
+      }
+}
