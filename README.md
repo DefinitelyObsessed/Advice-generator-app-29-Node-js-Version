@@ -6,7 +6,7 @@
 
 ## Languages used for this challenge:
 
-- **HTML**
+- **EJS**
 - **CSS**
 - **Node.js**
 - **Express.js**
