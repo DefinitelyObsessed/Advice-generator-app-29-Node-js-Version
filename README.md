@@ -1,4 +1,4 @@
-# Advice generator app (Vanilla js Version)
+# Advice generator app (Node js Version)
 
 ![Design preview for the Advice generator app coding challenge](./design/desktop-design.jpg)
 
@@ -20,7 +20,20 @@
 
 
 ## Run The App
-[npm install]
+
+###In the project directory, run:
+
+1. First install the node modules ,
+
+> npm install
+
+1. Then run:
+
+> nodemon app.js
+
+1. The run the app in the development mode.
+
+Open ` http://localhost:3000 ` to view it in the browser.
 
 
 
