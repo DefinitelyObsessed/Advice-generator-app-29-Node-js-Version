@@ -21,17 +21,17 @@
 
 ## Run The App
 
-###In the project directory, run:
+### In the project directory 
 
-1. First install the node modules ,
+- First install the node modules , by running :
 
 > npm install
 
-1. Then run:
+- Then run :
 
 > nodemon app.js
 
-1. The run the app in the development mode.
+- The run the app in the development mode.
 
 Open ` http://localhost:3000 ` to view it in the browser.
 
